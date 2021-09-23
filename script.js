@@ -3,14 +3,13 @@ var translateBtn = document.querySelector("#translateBtn");
 var outputTxt = document.querySelector("#outputTxt");
 var serverURL = "https://api.funtranslations.com/translate/minion.json"
 
-
 function translateURL(text){
     return serverURL+"?text="+text;
 }
 
 function showError(error){
-    console.log("error: "+error)
-    alert("error: "+error)
+    console.log("error: "+error);
+    alert("error: "+error);
 }
 
 function  clickEvent(){
